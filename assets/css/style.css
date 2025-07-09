@@ -593,3 +593,38 @@ a {
   font-size: 1.4rem;
   font-weight: 400;
 }
+/* ===============Booking============ */
+.booking {
+  margin: 170px 0;
+}
+.booking .container {
+  background-color: #f6fbff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 452px;
+}
+.booking__heading {
+  width: 813px;
+  color: #10375c;
+}
+.spacing {
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+  margin-top: 18px;
+}
+.booking__desc {
+  margin-top: 18px;
+  width: 617px;
+  color: #575f66;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.booking__btn {
+  line-height: 60px;
+  margin-top: 38px;
+}
