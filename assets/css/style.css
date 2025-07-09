@@ -14,6 +14,13 @@ body {
   --header-bgc: #10375c;
 }
 /* ============common========== */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
 .container {
   width: 1170px;
   max-width: calc(100% - 24px);
@@ -627,4 +634,132 @@ a {
 .booking__btn {
   line-height: 60px;
   margin-top: 38px;
+}
+
+/* ===============Footer============== */
+.footer {
+  background-color: var(--header-bgc);
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.footer-top {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer-top__column1--img {
+  width: 86px;
+  height: 31px;
+}
+.footer-top__column1--desc {
+  margin-top: 21px;
+  width: 336px;
+  color: #a9b3bb;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.footer__heading {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+.footer__heading-2 {
+  margin-top: 28px;
+}
+.footer-top li a {
+  display: block;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  white-space: nowrap;
+}
+.footer-top li a:hover {
+  text-decoration: underline;
+}
+.footer-list {
+  margin-top: 20px;
+}
+.footer-list-2 {
+  margin-top: 24px;
+}
+.footer-list li {
+  margin-top: 10px;
+}
+.footer-top__column4--social {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+.footer__social--btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2e80ce;
+  transition: 0.25s;
+}
+.footer__social--btn:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+.footer-top__column4--desc {
+  margin-top: 20px;
+  color: #a9b3bb;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer-form {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 12px;
+}
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-form__input::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  border: none;
+}
+.footer-form__submit:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.footer__hr {
+  margin-top: 28px;
+  width: 1170px;
+  height: 1px;
+  background: #406181;
+}
+.footer-bottom__desc {
+  margin-top: 28px;
+  padding-bottom: 42px;
+  color: #aab3ba;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.86;
 }
