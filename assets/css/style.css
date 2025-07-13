@@ -763,3 +763,11 @@ a {
   font-size: 1.4rem;
   line-height: 1.86;
 }
+
+/* AOS animation */
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}
