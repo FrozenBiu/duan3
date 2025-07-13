@@ -1,91 +1,188 @@
 /* PC */
 @media (min-width: 992px) {
-  .mobile-header {
-    display: none;
-  }
 }
 
-/* Tablet & mobile */
+/* Tablet & Mobile */
 @media (max-width: 991.98px) {
-  /* 1. Ẩn navbar */
+  /* 1. Ẩn thanh nav của PC */
   .navbar {
     display: none;
   }
-  /* 2. Chuyển logo vào giữa */
+  /* 2. Đưa logo ra giữa header */
   .header-top {
     position: relative;
   }
-  .header__logo {
+  .header-top .logo {
     position: absolute;
     left: 50%;
     translate: -50% -50%;
-    /* margin: 0 auto; */
   }
-
-  /*3. căn lại vị trí của menu icon */
-  .menu-header__icon {
-    position: absolute;
-    top: 35px;
-    left: -17px;
+  /* 3. Tạo menu cho header */
+  .header-mobile__icon {
     width: 86px;
     height: 31px;
+    position: absolute;
+    left: -17px;
+    top: 35px;
     color: #fff;
   }
-
-  /* 4. Overlay */
-  .menu-overlay {
-    position: fixed;
+  /* 4. Tạo vùng Overlay*/
+  .header__overlay {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
     inset: 0;
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
   }
-
-  /* 5. Kiểm tra xem menu-checkbox có được check thì hiện overlay */
-  .menu-checkbox:checked ~ .menu-overlay {
+  #menu-checkbox:checked ~ .header__overlay {
     opacity: 1;
     visibility: visible;
   }
-
-  /* 6. Code cho menu drawer */
+  /* 5. Tạo menu drawer */
   .menu-drawer {
-    position: fixed;
-    inset: 0 40% 0 0;
-    background-color: #2e1919;
-    z-index: 2;
-    transform: translateX(-100%);
     transition: 0.5s;
+    position: absolute;
+    height: 100vh;
+    inset: 0px 40% 0px 0px;
+    background-color: rgb(3, 24, 44);
+    transform: translateX(-100%);
+    z-index: 2;
     padding: 50px 30px;
   }
-
-  /* 7. Kiểm tra nếu checkbox được check thì hiện menu drawer */
-  .menu-checkbox:checked ~ .menu-drawer {
+  #menu-checkbox:checked ~ .menu-drawer {
     transform: translateX(0);
   }
-
-  /* 8. Cân chỉnh phần menu top */
+  /* 6. Cân chỉnh cho icon Close menu */
   .menu-drawer__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    align-items: center;
   }
-  .menu-drawer__top--closemenu {
+  .close__menu-drawer {
     height: 30px;
     width: 30px;
     color: #fff;
   }
-  #nav__list--mobile .navbar__link {
+  .navbar-mobile {
+    margin-top: 40px;
+  }
+  .navbar__link {
     display: block;
-    font-size: 2rem;
   }
-  #nav__list--mobile .navbar__link:hover {
-    background-color: #ffffff23;
+  /* 7. Code cho phần Hero */
+  .hero {
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
   }
-}
+  .hero__content {
+    order: 2;
+  }
+  .hero__media {
+    order: 1;
+  }
+  .hero__images {
+    justify-content: center;
+  }
+  .hero__content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero__heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+  .hero__desc {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__row {
+    width: 100%;
+    justify-content: center;
+  }
 
+  /* 8. Phần Service */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .service-item {
+    width: 100%;
+  }
+  .service__img {
+    width: 100%;
+  }
+  .service-item__desc {
+    width: 100%;
+  }
+  .service-item__body {
+    width: 87%;
+  }
+  .service-item__desc {
+    margin-top: 10px;
+    width: 85%;
+  }
+  .service-item__icon {
+    margin-left: 0px;
+  }
+  .service__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .service__btn {
+    margin: 50px auto;
+  }
+
+  /* 9. Phần How it works */
+  .how-it-work {
+    padding: 0px 0 100px 0;
+  }
+  .how-it-work__row {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .how-it-work-item {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 345px;
+  }
+  .how-it-work-item__desc {
+    width: 100%;
+  }
+
+  /* 10. About */
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+  .about-left {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about-right {
+    margin: 50px auto 0;
+    align-items: center;
+  }
+  .about-right__heading {
+    width: 80%;
+    text-align: center;
+  }
+  .about-right__desc {
+    width: 80%;
+    text-align: center;
+  }
+  .about-left__img-small {
+    display: none;
+  }
+  .about-left__img-large {
+    width: 100%;
+    border-radius: 15px;
+  }
+  /* 11. Team */
+}
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
@@ -95,8 +192,6 @@
 }
 
 /* Tạm ẩn phần không liên quan */
-.hero,
-.footer,
-main {
-  /* display: none; */
+.footer {
+  display: none;
 }

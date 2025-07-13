@@ -176,18 +176,11 @@
     </header>
 
     <!-- Tablet & mobile header -->
-    <div class="mobile-header">
-      <!-- tablet/mobile menu -->
-      <input
-        type="checkbox"
-        name="menu-checkbox"
-        id="menu-checkbox"
-        class="menu-checkbox"
-        hidden
-      />
-      <label for="menu-checkbox">
-        <svg
-          class="menu-header__icon"
+    <div class="header-mobile">
+      <!-- Menu -->
+      <label for="menu-checkbox"
+        ><svg
+          class="header-mobile__icon"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
         >
@@ -197,25 +190,25 @@
           />
         </svg>
       </label>
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" hidden />
 
-      <!-- overlay -->
-      <label for="menu-checkbox" class="menu-overlay"></label>
+      <!-- Overlay -->
+      <label for="menu-checkbox" class="header__overlay"></label>
 
-      <!-- menu content -->
+      <!-- Menu cho header -->
       <div class="menu-drawer">
-        <!-- Menu top -->
         <div class="menu-drawer__top">
-          <!-- logo -->
+          <!-- Logo -->
           <a href="./"
             ><img
               src="./assets/img/Logo.svg"
               alt="Shine smile"
-              class="logo menu-drawer__top--logo"
+              class="logo header__logo"
           /></a>
-          <!-- icon close menu -->
-          <label for="menu-checkbox">
-            <svg
-              class="menu-drawer__top--closemenu"
+          <!-- Nút close menu -->
+          <label for="menu-checkbox"
+            ><svg
+              class="close__menu-drawer"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >
@@ -226,28 +219,23 @@
             </svg>
           </label>
         </div>
-        <!-- nav mobile -->
-        <ul id="nav__list--mobile">
-          <li class="navbar__item">
-            <a class="navbar__link navbar__link--active" href="#!">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#!">Services</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#!">About</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="#!">Doctors</a>
-          </li>
-        </ul>
-        <!-- Sử dụng JS để copy navbar -->
-        <!-- <script>
-          const navPC = document.querySelector("#nav__list--pc");
-          const navMobile = document.querySelector("#nav__list--mobile");
-          // Sao chép
-          navMobile.innerHTML = navPC.innerHTML;
-        </script> -->
+        <!-- Navbar header mobile -->
+        <div class="navbar-mobile">
+          <ul class="navbar__list" id="navbar__list--pc">
+            <li class="navbar__item">
+              <a class="navbar__link navbar__link--active" href="#!">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#!">Services</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#!">About</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#!">Doctors</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- Main -->
@@ -320,7 +308,7 @@
                   </div>
                 </div>
               </section>
-              <!-- item 13-->
+              <!-- item 3-->
               <section class="service-item">
                 <div class="service-item__icon">
                   <svg
