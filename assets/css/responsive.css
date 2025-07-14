@@ -1,5 +1,8 @@
 /* PC */
 @media (min-width: 992px) {
+  .header-mobile {
+    display: none;
+  }
 }
 
 /* Tablet & Mobile */
@@ -69,6 +72,7 @@
   }
   .navbar__link {
     display: block;
+    font-size: 2rem;
   }
   /* 7. Code cho phần Hero */
   .hero {
@@ -182,16 +186,172 @@
     border-radius: 15px;
   }
   /* 11. Team */
+  .dentist-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .dentist-list__item {
+    width: 100%;
+  }
+  .dentist-list__img {
+    width: 100%;
+    display: flex;
+  }
+  .dentist-list__img img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 271px;
+  }
+  /* 12. CTA install */
+  .left-cta img {
+    display: none;
+  }
+  .cta-right {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .cta-right__heading {
+    /* width: 90%; */
+  }
+  /* 13. Blog */
+  .blog .container {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .blog-left {
+    order: 2;
+    align-items: center;
+  }
+  .blog-right {
+    order: 1;
+  }
+  .blog-left__heading {
+    width: 80%;
+    margin-top: 0;
+  }
+  .blog-left a {
+    margin-top: 0;
+  }
+  .blog-right__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* Footer */
+  .footer-top__column1 {
+    display: none;
+  }
+  .footer-top {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
 }
 
 /* Mobile */
 @media (max-width: 767.98px) {
+  /* Header */
+  .header-top .action {
+    display: none;
+  }
+  .login__mobile-only {
+    display: block;
+  }
+
+  /* Hero */
+  .hero__img--small {
+    display: none;
+  }
+  .hero__heading {
+    width: 100%;
+    font-size: 4rem;
+  }
+  .hero__row {
+    padding-bottom: 30px;
+  }
+  .btn-book__mobile {
+    min-width: 160px;
+  }
+  /* Service */
+  .service__desc {
+    width: 365px;
+  }
+  .service__img {
+    height: 430px;
+  }
+  .service-item__desc {
+    width: 90%;
+  }
+  /* How it works */
+  .how-it-work__desc {
+    width: 380px;
+  }
+  .how-it-work__row {
+    margin-top: 55px;
+  }
+  .how-it-work-item__icon {
+    margin-top: 16px;
+  }
+  .how-it-work-item__desc {
+    width: 85%;
+  }
+  .how-it-work-item__heading,
+  .how-it-work-item__icon,
+  .how-it-work-item__desc,
+  .how-it-work-item a {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  /* Team */
+  .dentist-list {
+    grid-template-columns: 1fr;
+  }
+  /* CTA install */
+  .cta-right__heading {
+    width: 90%;
+    font-size: 3.8rem;
+  }
+  .cta-right__desc {
+    width: 100%;
+  }
+  .cta-right__app {
+    justify-content: center;
+  }
+  /* Blog */
+  .blog-right {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .section-heading-h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  /* Booking */
+  .booking__heading {
+    width: 100%;
+  }
+  .booking__heading {
+    width: 85%;
+  }
+  .booking__desc {
+    width: 85%;
+  }
+  /* Footer */
+  .footer-top {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+  .footer-top__column1--desc,
+  .footer-top__column2--desc,
+  .footer-top__column3--desc,
+  .footer-top__column4--desc {
+    width: 100%;
+    font-size: 1.6rem;
+  }
 }
 
 /* Tạm ẩn phần không liên quan */
-.footer {
-  display: none;
-}
