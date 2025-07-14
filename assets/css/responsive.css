@@ -243,6 +243,10 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  /* Header menu */
+  .menu-moblie-only {
+    display: none;
+  }
   /* Footer */
   .footer-top__column1 {
     display: none;
@@ -277,8 +281,11 @@
     min-width: 160px;
   }
   /* Service */
+  .service__heading {
+    margin: 0 auto;
+  }
   .service__desc {
-    width: 365px;
+    width: 100%;
   }
   .service__img {
     height: 430px;
@@ -287,8 +294,12 @@
     width: 90%;
   }
   /* How it works */
+  .how-it-work__heading {
+    margin: 0 auto;
+  }
   .how-it-work__desc {
-    width: 380px;
+    width: 100%;
+    text-align: center;
   }
   .how-it-work__row {
     margin-top: 55px;
@@ -307,19 +318,29 @@
     margin-right: 30px;
   }
   /* Team */
+  .team__heading {
+    margin: 0 auto;
+  }
   .dentist-list {
     grid-template-columns: 1fr;
   }
   /* CTA install */
-  .cta-right__heading {
+  .cta-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-heading-h2 {
     width: 90%;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   .cta-right__desc {
     width: 100%;
+    text-align: center;
   }
   .cta-right__app {
     justify-content: center;
+    margin-top: 20px;
   }
   /* Blog */
   .blog-right {
@@ -327,7 +348,7 @@
     row-gap: 30px;
   }
   .section-heading-h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-align: center;
   }
   /* Booking */
