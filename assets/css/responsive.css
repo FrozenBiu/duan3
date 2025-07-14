@@ -211,9 +211,6 @@
     margin: 0 auto;
     width: 80%;
   }
-  .cta-right__heading {
-    /* width: 90%; */
-  }
   /* 13. Blog */
   .blog .container {
     flex-direction: column;
