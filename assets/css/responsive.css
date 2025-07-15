@@ -7,6 +7,13 @@
 
 /* Tablet & Mobile */
 @media (max-width: 991.98px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
   /* 1. Ẩn thanh nav của PC */
   .navbar {
     display: none;
