@@ -244,6 +244,9 @@
     align-items: center;
     flex-direction: column;
   }
+  .footer__hr {
+    width: 100%;
+  }
 }
 
 /* Tablet */
@@ -399,9 +402,6 @@
   .footer-top__column4--desc {
     width: 100%;
     font-size: 1.6rem;
-  }
-  .footer__hr {
-    width: 100%;
   }
 }
 
