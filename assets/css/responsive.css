@@ -400,6 +400,9 @@
     width: 100%;
     font-size: 1.6rem;
   }
+  .footer__hr {
+    width: 100%;
+  }
 }
 
 /* Tạm ẩn phần không liên quan */
