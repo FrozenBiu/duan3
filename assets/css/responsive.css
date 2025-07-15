@@ -89,6 +89,7 @@
   .hero__images {
     justify-content: center;
   }
+
   .hero__content {
     width: 80%;
     display: flex;
@@ -267,17 +268,32 @@
   .hero__img--small {
     display: none;
   }
+  .hero__img--large {
+    height: auto;
+    width: 100%;
+  }
   .hero__heading {
     width: 100%;
     font-size: 4rem;
   }
   .hero__row {
     padding-bottom: 30px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__phone {
+    margin-left: 0;
+    margin-top: 30px;
   }
   .btn-book__mobile {
     min-width: 160px;
   }
   /* Service */
+  .service {
+    padding: 80px 0;
+  }
   .service__heading {
     margin: 0 auto;
   }
@@ -285,7 +301,7 @@
     width: 100%;
   }
   .service__img {
-    height: 430px;
+    height: auto;
   }
   .service-item__desc {
     width: 90%;
@@ -318,6 +334,9 @@
   .team__heading {
     margin: 0 auto;
   }
+  .team__btn {
+    min-width: 205px;
+  }
   .dentist-list {
     grid-template-columns: 1fr;
   }
@@ -348,6 +367,10 @@
     font-size: 3.5rem;
     text-align: center;
   }
+  .about-right__btn {
+    min-width: 205px;
+  }
+
   /* Booking */
   .booking__heading {
     width: 100%;
